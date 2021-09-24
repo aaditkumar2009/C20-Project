@@ -23,17 +23,24 @@ function setup() {
 function draw() {
   background(bg);
   drawSprites();
-
-  textSize(20);
+push()
+textSize(50);
+  textFont("Fleur De Leah")
+  //textSize(50)
   fill("white")
   text("Instructions:",20, 35);
-  textSize(15);
-  text("Up Arrow = Brushing",20, 55);
-  text("Down Arrow = Gymming",20, 70);
-  text("Left Arrow = Eating",20, 85);
-  text("Right Arrow = Bathing",20, 100);
-  text("m key = Moving",20, 115);
-  
+  textSize(35);
+  text("Up Arrow = Brushing",20, 70);
+  textSize(35);
+  text("Down Arrow = Gymming",20, 94);
+  textSize(35);
+  text("Left Arrow = Eating",20, 125);
+  textSize(35);
+  text("Right Arrow = Bathing",20, 161);
+  textSize(35);
+  text("m key = Moving",20, 192);
+  textSize(35);
+  pop();
   /*edges=createEdgeSprites();
   astronautbounce.Off(edges);*/
 
